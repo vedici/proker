@@ -174,8 +174,7 @@ body{
 
 	    .row-title-chat {
 	    	height:20%; 
-	    	padding-top: 25px; 
-	    	border-bottom: solid 1px; 
+	    	padding-top: 25px;
 	    	background-color: #f9f9f9; 
 	    	box-shadow: 1px 1px 20px grey;
 	    }
@@ -221,7 +220,7 @@ body{
 		    background:#777779;
 		    border-radius: 4px;
 		}
-	    
+
 	    /* On-xsall screens, set height to 'auto' for sidenav and grid */
 	    @media screen and (max-width: 767px) {
 	      	.sidenav {
