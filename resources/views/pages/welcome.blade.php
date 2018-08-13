@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Welcome
+                    Welcome View
                 </div>
 
                 <div class="links">
