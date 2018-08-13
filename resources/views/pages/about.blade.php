@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    About
+                    About {{ $name['first'] . " " . $name['last'] }}
                 </div>
 
                 <div class="links">
