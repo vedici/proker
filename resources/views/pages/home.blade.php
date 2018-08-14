@@ -4,7 +4,7 @@
 <div class="row cpanel">
 	<div class="cpanel-content">
 		<div class="col-md-2 hidden-sm hidden-xs">
-			<img src="/img/sample.jpg" class="img-company" alt="Profile"/>
+			<img src="{{ URL::asset('/img/sample.jpg') }}" class="img-company" alt="Profile"/>
 		</div>
 		<div class="col-md-8 text-left col-xs-12">
 			<div class="row">

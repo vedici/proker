@@ -6,8 +6,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-		<script type="text/javascript" src="/js/chart.js"></script>
-		<link rel="stylesheet" type="text/css" href="/css/style.css">
+		<script type="text/javascript" src="{{ URL::asset('js/chart.js') }}"></script>
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/style.css') }}">
 		<style>		
 		</style>
 	</head>
@@ -34,7 +34,7 @@
 			        <!-- <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li> -->
 			        <div class="dropdown">
 					    <a href="" class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" style="text-decoration: none !important;">
-					    	<img src="/img/sample-profile.jpg" class="img-profile"/>
+					    	<img src="{{ URL::asset('/img/sample-profile.jpg') }}" class="img-profile"/>
 					    	<span class="caret"/>
 					  	</a>
 					  	<ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
