@@ -11,14 +11,10 @@
 |
 */
 
-Route::get('/contact', 'PagesController@getContact');
+Route::get('/feed', 'PageController@feed')->name('feed');
 
-Route::get('/about', 'PagesController@getAbout');
-
-Route::get('/','PagesController@getHome');
-
-Route::get('/message','PagesController@getMessage');
+Route::get('/message', 'PageController@message')->name('message');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('index');
