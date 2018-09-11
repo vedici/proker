@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <nav class="navbar navbar-dark navigation-clean-button mb-5">
+        <nav class="navbar navbar-default navigation-clean-button">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#">ConIt</a>
