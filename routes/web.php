@@ -18,3 +18,7 @@ Route::get('/message', 'PageController@message')->name('message');
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('index');
+
+Route::get('test', function () {
+    return view('auth.login2');
+});
