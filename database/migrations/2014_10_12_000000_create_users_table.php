@@ -23,12 +23,6 @@ class CreateUsersTable extends Migration
             $table->rememberToken();
             $table->timestamps();
         });
-
-        Schema::create('category', function (Blueprint $table) {
-            $table->char('code', 10)->unique();
-            $table->string('name', 100);
-            $table->primary('code');
-        });
     }
 
     /**
@@ -39,6 +33,5 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
-        Schema::dropIfExists('category');
     }
 }
