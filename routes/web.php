@@ -11,8 +11,8 @@
 |
 */
 
-Route::get('/', 'PageController@feed')->name('feed');
+Route::get('/feed', 'PageController@feed')->name('page.feed');
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/', 'HomeController@index')->name('home');

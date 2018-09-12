@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use App\Http\Middleware\RedirectIfAuthenticated;
+use Illuminate\Http\Request;
 
 class LoginController extends Controller
 {
@@ -26,7 +27,12 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/';
+    // protected $redirectTo = '/feed';
+
+    protected function authenticated(Request $request, $user)
+    {
+        return redirect(route('page.feed'));
+    }
 
     /**
      * Create a new controller instance.
