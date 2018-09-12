@@ -9,6 +9,9 @@
 
                 <div class="card-body">
                     You are logged in! Under construction
+                    @foreach ($categories as $category)
+                        <p>{{ $category->name }}</p>
+                    @endforeach
                 </div>
             </div>
         </div>
