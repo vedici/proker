@@ -17,10 +17,17 @@ class CreateUsersTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->string('email')->unique();
+            $table->string('address', 250);
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+        });
+
+        Schema::create('category', function (Blueprint $table) {
+            $table->char('code', 10)->unique();
+            $table->string('name', 100);
+            $table->primary('code');
         });
     }
 
@@ -32,5 +39,6 @@ class CreateUsersTable extends Migration
     public function down()
     {
         Schema::dropIfExists('users');
+        Schema::dropIfExists('category');
     }
 }
