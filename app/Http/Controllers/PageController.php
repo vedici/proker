@@ -13,7 +13,7 @@ class PageController extends Controller
 
     public function feed()
     {
-        return view('pages.feed');
+        return view('pages.feed2');
     }
 
     public function message()
