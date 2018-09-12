@@ -1,8 +1,10 @@
+@extends('template/main')
 
-<div class="row" style="max-height: 250px;background-color: rgba(255, 255, 255, 0.9);margin-top:-25px;">
-	<div class="">
-		<div class="col-md-2 col-md-offset-2 hidden-sm hidden-xs">
-			<img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:100px;height:100px;" alt="Profile"/>
+@section('content')
+<div class="row cpanel">
+	<div class="cpanel-content">
+		<div class="col-md-2 hidden-sm hidden-xs">
+			<img src="{{ URL::asset('/img/sample.jpg') }}" class="img-company" alt="Profile"/>
 		</div>
 		<div class="col-md-8 text-left col-xs-12">
 			<div class="row">
@@ -13,9 +15,9 @@
 			</div>
 		</div>
 	</div>
-</div>
-  <div class="row content col-md-11 col-md-offset-1" style="height:auto; margin-top: 15px;">
-	<div class="col-xs-12 col-md-4 panel" style="background-color: white;">
+</div>    
+  <div class="row content" style="height:auto;">
+	<div class="col-xs-12 col-md-4 sidenav panel panel-custom" style="background-color: #f7f9f9;">
 		<!-- <div class="affix"> -->
 		<div class="panel-heading">
 			<h3>Statistics</h3>
@@ -44,33 +46,32 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-xs-12 col-md-8 text-left">
+	<div class="col-xs-12 col-md-8 text-left post-wrapper"> 
 		  <!-- <h1>Your Products</h1> -->
-
+		  
 		  <!-- <hr>
 		  <h3>Test</h3>
 		  <p>Lorem ipsum...</p> -->
-		  <div class="row col-md-12">
-			  <form action="" class="row col-md-12" style="border: solid 1px;">
-				  <div class="row col-md-12">
+		  <div class="row col-xs-12 col-md-8 col-md-offset-1 input-post" style="">
+			  <form action="" class="form-post" style="">
+				  <div class="row col-xs-12">
 					  <textarea class="form-control textarea-post" style="" placeholder="Share Your Work Here"></textarea>
 				  </div>
-				  <div class="row col-md-12" style="margin-bottom: 20px; margin-top: 10px;">
-					  <div class="col-sm-6 col-xs-8">
+				  <div class="row col-xs-12" style="margin-bottom: 20px;">
+					  <div class="col-sm-6">
 						  <button type="button" class="btn btn-primary">Image</button>
 						  <button type="button" class="btn btn-primary">Video</button>
 					  </div>
-					  <div class="col-sm-6 col-xs-4 text-right">
+					  <div class="col-sm-6 text-right">
 						  <button type="button" class="btn btn-primary">Submit</button>
 					  </div>
 				  </div>
 			  </form>
 		  </div>
-		</div>
-		<div class="col-md-8">
+
 		  <!-- Looping From Database -->
-		  <div class="row col-xs-12 col-md-8 col-md-offset-1" style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: white;">
-			  <div class="row col-xs-12" style="margin: 5px;">
+		  <div class="row col-xs-12 col-md-8 col-md-offset-1 list-post" style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: #f7f9f9;">
+			  <div class="row col-xs-12 post-content" style="margin: 5px;">
 				  <div class="row" style="border-bottom: solid 1px #d5dddd; margin:2px;">
 					  <div class="col-xs-2">
 						  <img src="/img/sample.jpg" style="height:40px; width: 40px; margin-bottom:5px;">
@@ -84,8 +85,8 @@
 				  </div>
 			  </div>
 		  </div>
-		  <div class="row col-xs-12 col-md-8 col-md-offset-1 " style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: white;">
-			  <div class="row col-xs-12 " style="margin: 5px;">
+		  <div class="row col-xs-12 col-md-8 col-md-offset-1 list-post" style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: #f7f9f9;">
+			  <div class="row col-xs-12 post-content" style="margin: 5px;">
 				  <div class="row" style="border-bottom: solid 1px #d5dddd; margin:2px;">
 					  <div class="col-xs-2">
 						  <img src="">
@@ -99,8 +100,8 @@
 				  </div>
 			  </div>
 		  </div>
-		  <div class="row col-xs-12 col-md-8 col-md-offset-1 " style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: white;">
-			  <div class="row col-xs-12 " style="margin: 5px;">
+		  <div class="row col-xs-12 col-md-8 col-md-offset-1 list-post" style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: #f7f9f9;">
+			  <div class="row col-xs-12 post-content" style="margin: 5px;">
 				  <div class="row" style="border-bottom: solid 1px #d5dddd; margin:2px;">
 					  <div class="col-xs-2">
 						  <img src="">
@@ -114,8 +115,8 @@
 				  </div>
 			  </div>
 		  </div>
-		  <div class="row col-xs-12 col-md-8 col-md-offset-1 " style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: white;">
-			  <div class="row col-xs-12 " style="margin: 5px;">
+		  <div class="row col-xs-12 col-md-8 col-md-offset-1 list-post" style="margin-top: 20px; border: solid 1px;border-color:#d5dddd; background-color: #f7f9f9;">
+			  <div class="row col-xs-12 post-content" style="margin: 5px;">
 				  <div class="row" style="border-bottom: solid 1px #d5dddd; margin:2px;">
 					  <div class="col-xs-2">
 						  <img src="">

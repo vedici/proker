@@ -18,5 +18,3 @@ Route::get('/about', 'PagesController@getAbout');
 Route::get('/','PagesController@getHome');
 
 Route::get('/message','PagesController@getMessage');
-
-Route::get('/login','PagesController@getLogin');

@@ -27,10 +27,6 @@ class PagesController extends Controller {
     public function getMessage() {
       return view('pages/message');
     }
-
-    public function getLogin() {
-      return view('pages/login');
-    }
 }
 
 ?>

@@ -73,8 +73,8 @@
             </div>
         </footer>
     </div>
-    <script src="{{URL::asset('js/jquery.min.js')}}"></script>
-    <script src="{{URL::asset('bootstrap/js/bootstrap.min.js')}}"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
 
 </html>
