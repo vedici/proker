@@ -41,6 +41,12 @@
                         </li>
                     </ul>
                     <p class="navbar-text navbar-right actions"><a class="navbar-link login" href="#">Log In</a> <a class="btn btn-default action-button" role="button" href="#">Sign Up</a></p>
+                    @auth
+                        <form action="{{ route('logout') }}" method="POST" class="navbar-text navbar-right actions">
+                            @csrf
+                            <button class="btn btn-secondary">Logout</button>
+                        </form>
+                    @endauth
                 </div>
             </div>
         </nav>
