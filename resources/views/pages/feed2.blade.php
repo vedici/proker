@@ -5,7 +5,7 @@
         <div class="row shadow-sm" style="background-color:#eceff1; height: 120px;">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-2 col-md-offset-2 hidden-sm hidden-xs" style="padding-top: 10px; padding-bottom: 10px;">
+                    <div class="col-md-2 col-md-offset-2 d-none d-md-block" style="padding-top: 10px; padding-bottom: 10px;">
                         <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:100px; height:100px;" alt="Profile"/>
                     </div>
                     <div class="col-md-8 text-left col-xs-12" style="padding-top: 27px; padding-bottom: 10px;">
@@ -20,12 +20,12 @@
                 <div class="row" style="margin-top: 50px;">
                     <!-- Card Company Info-->
                     <div class="col-md-4">
-                      <div class="card rounded-0">
+                      <div class="card rounded-0" style="margin-bottom:15px;">
                         <div class="card-header text-center">
                           <h4>Company Info</h4>
                         </div>
                         <div class="card-body">
-                          <table class="table">
+                          <table class="table table-responsive">
                             <tbody>
                               <tr>
                                 <th>Sales Name</th>
@@ -52,7 +52,7 @@
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
-                              <img src="https://as.ftcdn.net/r/v1/pics/ea2e0032c156b2d3b52fa9a05fe30dedcb0c47e3/landing/images_photos.jpg" class="img-responsive" style="width:50px;height:50px;"/>
+                              <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
                               <span class="">Denning & Fourcade</span>
@@ -68,7 +68,7 @@
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
-                              <img src="https://as.ftcdn.net/r/v1/pics/ea2e0032c156b2d3b52fa9a05fe30dedcb0c47e3/landing/images_photos.jpg" class="img-responsive" style="width:50px;height:50px;"/>
+                              <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
                               <span class="">Denning & Fourcade</span>
@@ -84,7 +84,7 @@
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
-                              <img src="https://as.ftcdn.net/r/v1/pics/ea2e0032c156b2d3b52fa9a05fe30dedcb0c47e3/landing/images_photos.jpg" class="img-responsive" style="width:50px;height:50px;"/>
+                              <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
                               <span class="">Denning & Fourcade</span>
