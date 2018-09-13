@@ -26,6 +26,11 @@ class PageController extends Controller
       return view('pages.detail');
     }
 
+    public function newcompany()
+    {
+      return view('pages.newcompany');
+    }
+
     public function message()
     {
         return "Message";

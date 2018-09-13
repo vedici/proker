@@ -20,3 +20,5 @@ Route::get('/', 'HomeController@index')->name('home')->middleware('notguest');
 Route::get('/detail', 'PageController@detail')->name('page.detail');
 
 Route::get('/home', 'PageController@home')->name('page.home');
+
+Route::get('/newcompany', 'PageController@newcompany')->name('page.newcompany');
