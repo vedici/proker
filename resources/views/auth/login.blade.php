@@ -1,8 +1,8 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
+<div class="container" style="margin-top:95px;">
+    <div class="row justify-content-center align-items-center">
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header">{{ __('Login') }}</div>
@@ -64,6 +64,16 @@
                         </div>
                     </form>
                 </div>
+            </div>
+            <div class="row" style="margin-top:25px;">
+              <div class="col-md-3"></div>
+              <div class="col-md-6">
+                <form class="form-inline justify-content-center">
+                  <input class="form-control" type="search" placeholder="Search Seller's Name" aria-label="Search">
+                  <button class="btn btn-outline-info" type="submit">Search</button>
+                </form>
+              </div>
+              <div class="col-md-4"></div>
             </div>
         </div>
     </div>

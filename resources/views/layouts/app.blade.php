@@ -73,5 +73,23 @@
     <main>
         @yield('content')
     </main>
+    <!-- Footer -->
+    <footer class="" style="margin-top:60px;background-color:#212529;">
+      <div class="col-md-12 row" style="padding:10px;">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+          <div class="row justify-content-center">
+            <h4 style="color:white;" class="text-center">ConIt</h4>
+          </div>
+          <div class="row justify-content-center">
+            <h6 style="color:white;" class="text-center">ConIt is a free website made for the purpose of creative community. We aim to help creative people share their work and product so their sales can go up and their marketing effort can be reduced.</h6>
+          </div>
+        </div>
+        <div class="col-md-2"></div>
+      </div>
+      <div class="col-md-12 row justify-content-center" style="padding:10px;">
+        <span style="font-size:12px;color:white;">Copyright @2018 Vedici</span>
+      </div>
+    </footer>
 </body>
 </html>
