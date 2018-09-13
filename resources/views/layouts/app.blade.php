@@ -18,6 +18,11 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>
+      body{
+        background-color: #eaeaea;
+      }
+    </style>
 </head>
 <body>
     <div id="app">
@@ -74,7 +79,7 @@
         @yield('content')
     </main>
     <!-- Footer -->
-    <footer class="" style="margin-top:60px;background-color:#212529;">
+    <!--<footer class="" style="margin-top:60px;background-color:#212529;">
       <div class="col-md-12 row" style="padding:10px;">
         <div class="col-md-2"></div>
         <div class="col-md-8">
@@ -90,6 +95,6 @@
       <div class="col-md-12 row justify-content-center" style="padding:10px;">
         <span style="font-size:12px;color:white;">Copyright @2018 Vedici</span>
       </div>
-    </footer>
+    </footer>-->
 </body>
 </html>
