@@ -33,7 +33,7 @@
                               </ul>
                             </div>
                             <div class="modal-footer">
-                              
+
                             </div>
                           </div>
                         </div>
@@ -71,7 +71,7 @@
                               <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
-                              <span class="">Denning & Fourcade</span>
+                              <span class=""><a href="detail" style="text-decoration:none;">Denning & Fourcade</a></span>
                             </div>
                           </div>
                           <div class="row" style="margin-top:10px; padding:5px;">
@@ -87,7 +87,7 @@
                               <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
-                              <span class="">Denning & Fourcade</span>
+                              <span class=""><a href="detail" style="text-decoration:none;">Denning & Fourcade</a></span>
                             </div>
                           </div>
                           <div class="row" style="margin-top:10px; padding:5px;">
@@ -103,7 +103,7 @@
                               <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
                             </div>
                             <div class="col-md-10">
-                              <span class="">Denning & Fourcade</span>
+                              <span class=""><a href="detail" style="text-decoration:none;">Denning & Fourcade</a></span>
                             </div>
                           </div>
                           <div class="row" style="margin-top:10px; padding:5px;">
