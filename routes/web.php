@@ -16,3 +16,7 @@ Route::get('/feed', 'PageController@feed')->name('page.feed');
 Auth::routes();
 
 Route::get('/', 'HomeController@index')->name('home')->middleware('notguest');
+
+Route::get('/detail', 'PageController@detail')->name('page.detail');
+
+Route::get('/home', 'PageController@home')->name('page.home');

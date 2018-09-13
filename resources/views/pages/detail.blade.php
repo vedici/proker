@@ -2,37 +2,49 @@
 
 @section('content')
     <div class="container-fluid">
-        <div class="row shadow-sm" style="background-color:#eceff1; height: 100px;">
+        <div class="row shadow-sm" style="background-color:#eceff1; height: 120px;">
             <div class="container">
-                <div class="row text-center" style="margin-top:25px;">
-                    <div class="col-md-1">
-
+                <div class="row">
+                    <div class="col-md-2 col-md-offset-2 d-none d-md-block" style="padding-top: 10px; padding-bottom: 10px;">
+                        <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:100px; height:100px;" alt="Profile"/>
                     </div>
-                    <div class="col-md-10">
-                      <h1><a href="#" style="text-decoration:none;">CATEGORY</a></h1>
-                    </div>
-                    <div class="col-md-1">
-
+                    <div class="col-md-8 text-left col-xs-12" style="padding-top: 27px; padding-bottom: 10px;">
+                        <div class="row">
+                            <h2>Denning & Fourcade, Inc.</h2>
+                        </div>
+                        <div class="row">
+                            <h5>Music Producer</h5>
+                        </div>
                     </div>
                 </div>
                 <div class="row" style="margin-top: 50px;">
-                  <div class="col-md-3">
-                    <div class="card rounded-0">
-                      <div class="card-body">
-                        <ul class="list-group list-group-flush">
-                          <li class="list-group-item"><span class="font-weight-bold">Followed Seller</span></li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                          <li class="list-group-item">Cras justo odio</li>
-                          <li class="list-group-item">Dapibus ac facilisis in</li>
-                          <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
+                    <!-- Card Company Info-->
+                    <div class="col-md-4">
+                      <div class="card rounded-0" style="margin-bottom:15px;">
+                        <div class="card-header text-center">
+                          <h4>Company Info</h4>
+                        </div>
+                        <div class="card-body">
+                          <table class="table table-responsive">
+                            <tbody>
+                              <tr>
+                                <th>Sales Name</th>
+                                <td>Denning & fourcade</td>
+                              </tr>
+                              <tr>
+                                <th>Phone Number</th>
+                                <td>089532718927</td>
+                              </tr>
+                              <tr>
+                                <th>Address</th>
+                                <td>Salem Boulevard No. 15, Bouyard Avenue</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
                       </div>
                     </div>
-                  </div>
+                    <!---->
                     <!-- Card Posting -->
                     <div class="col-md-6">
                       <!-- List Posting -->
@@ -86,22 +98,8 @@
                       <!---->
                     </div>
                     <!---->
-                    <div class="col-md-3">
-                      <div class="card rounded-0">
-                        <div class="card-body">
-                          <ul class="list-group list-group-flush">
-                            <li class="list-group-item"><span class="font-weight-bold">Active Seller</span></li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                          </ul>
-                        </div>
-                      </div>
+                    <div class="col-md-2">
+
                     </div>
                 </div>
             </div>

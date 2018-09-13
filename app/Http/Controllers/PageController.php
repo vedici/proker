@@ -16,6 +16,16 @@ class PageController extends Controller
         return view('pages.feed2');
     }
 
+    public function home()
+    {
+        return view('pages.home');
+    }
+
+    public function detail()
+    {
+      return view('pages.detail');
+    }
+
     public function message()
     {
         return "Message";
