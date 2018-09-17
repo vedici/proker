@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="container bootstrap snippet" style="margin-top:15px;">
+<div class="container bootstrap snippet shadow-sm" style="margin-top:15px;">
     <div class="row">
 		<div class="col-md-4 bg-white ">
             <div class=" row border-bottom padding-sm justify-content-center" style="height: 40px;">
