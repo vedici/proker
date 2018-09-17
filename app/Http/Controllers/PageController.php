@@ -31,8 +31,13 @@ class PageController extends Controller
       return view('pages.newcompany');
     }
 
+    public function manageproduct()
+    {
+      return view('pages.product');
+    }
+
     public function message()
     {
-        return "Message";
+        return view('pages.message');
     }
 }
