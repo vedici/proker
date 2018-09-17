@@ -48,7 +48,7 @@
                           </div>
                         </div>
                       <!-- List Posting -->
-                      <div class="card rounded-0" style="margin-bottom:15px;">
+                      <div class="card shadow-sm rounded-0" style="margin-bottom:15px;">
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
@@ -64,7 +64,7 @@
                         </div>
                       </div>
 
-                      <div class="card rounded-0" style="margin-bottom:15px;">
+                      <div class="card shadow-sm rounded-0" style="margin-bottom:15px;">
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
@@ -80,7 +80,7 @@
                         </div>
                       </div>
 
-                      <div class="card rounded-0" style="margin-bottom:15px;">
+                      <div class="card shadow-sm rounded-0" style="margin-bottom:15px;">
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
