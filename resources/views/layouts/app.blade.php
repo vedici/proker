@@ -12,7 +12,7 @@
     <!-- Scripts -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="crossorigin="anonymous"></script>
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <!--<script src="{{ asset('js/app.js') }}" defer></script>-->
+    <script src="{{ asset('js/app.js') }}" defer></script>-->
     <!-- Fonts -->
     <link rel="dns-prefetch" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
@@ -244,19 +244,19 @@ a:hover, a:active, a:focus {
                                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                             </li>
                         @else
-                        <li class="nav-item active">
+                        <li class="nav-item {{{ (Request::is('feed') ? 'active' : '') }}}">
                           <a class="nav-link" href="feed">Feed <span class="sr-only">(current)</span></a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{{ (Request::is('message') ? 'active' : '') }}}">
                           <a class="nav-link" href="message">Inbox</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{{ (Request::is('home') ? 'active' : '') }}}">
                           <a class="nav-link" href="home">Company</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{{ (Request::is('newcompany') ? 'active' : '') }}}">
                           <a class="nav-link" href="newcompany">Create Company</a>
                         </li>
-                        <li class="nav-item">
+                        <li class="nav-item {{{ (Request::is('product') ? 'active' : '') }}}">
                           <a class="nav-link" href="product">Manage Product</a>
                         </li>
                             <li class="nav-item dropdown">
