@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-6">
             <div class="card rounded-0">
-                <div class="card-header">{{ __('Register Your Company') }}</div>
+                <div class="card-header text-center">{{ __('Register Your Company') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">
@@ -67,17 +67,11 @@
                             </div>
                         </div>
 
-                        <div class="form-group row justify-content-center">
-                          <div class="col-md-10">
-                            <span class="font-weight-bold">Company URL</span>
-                          </div>
-                        </div>
-
                         <div class="form-group row">
-                            <label for="urlcompany" class="col-md-4 col-form-label text-md-right">{{ __('conit.me/company/') }}</label>
+                            <label for="urlcompany" class="col-md-4 col-form-label text-md-right">{{ __('Company URL') }}</label>
 
                             <div class="col-md-6">
-                                <input id="urlcompany" type="text" class="form-control{{ $errors->has('urlcompany') ? ' is-invalid' : '' }}" name="urlcompany" value="{{ old('urlcompany') }}" required autofocus>
+                                <input id="urlcompany" type="text" class="form-control{{ $errors->has('urlcompany') ? ' is-invalid' : '' }}" name="urlcompany" value="{{ old('urlcompany') }}" placeholder="Vedici" required autofocus>
 
                                 @if ($errors->has('urlcompany'))
                                     <span class="invalid-feedback" role="alert">
@@ -87,12 +81,18 @@
                             </div>
                         </div>
 
+                        <div class="form-group row justify-content-center">
+                          <div class="col-md-6 offset-md-2">
+                            <span class="small">conit.me/company/<span class="font-weight-bold">Vedici</span></span>
+                          </div>
+                        </div>
+
                         <div class="form-group row">
-                          <div class="col-md-6 offset-md-4">
+                          <div class="col-md-10 offset-md-1">
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" name="terms" id="terms" {{ old('terms') ? 'checked' : '' }}>
 
-                                <label class="form-check-label" for="terms" style="font-size:12px; color:grey;">
+                                <label class="form-check-label text-center" for="terms" style="font-size:12px; color:grey;">
                                     {{ __('I verify that I am the official representative of this company and have the right to act on behalf of the company in the creation of this page.') }}
                                 </label>
                             </div>
@@ -100,7 +100,7 @@
                         </div>
 
                         <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
+                            <div class="col-md-12 text-center">
                                 <button type="submit" class="btn btn-primary">
                                     {{ __('Register') }}
                                 </button>
