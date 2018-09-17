@@ -52,26 +52,25 @@
                             </li>
                         @else
                         <li class="nav-item {{{ (Request::is('feed') ? 'active' : '') }}}">
-                          <a class="nav-link" href="feed">Feed <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="{{ route('page.feed') }}">Feed <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item {{{ (Request::is('message') ? 'active' : '') }}}">
-                          <a class="nav-link" href="message">Message</a>
+                          <a class="nav-link" href="{{ route('page.message') }}">Message</a>
                         </li>
                         <li class="nav-item {{{ (Request::is('home') ? 'active' : '') }}}">
-                          <a class="nav-link" href="home">Company</a>
-                        </li>
-                        <li class="nav-item {{{ (Request::is('newcompany') ? 'active' : '') }}}">
-                          <a class="nav-link" href="newcompany">Create Company</a>
+                          <a class="nav-link" href="{{ route('page.home') }}">Company</a>
                         </li>
                         <li class="nav-item {{{ (Request::is('product') ? 'active' : '') }}}">
-                          <a class="nav-link" href="product">Manage Product</a>
+                          <a class="nav-link" href="{{ route('page.product') }}">Manage Product</a>
                         </li>
                             <li class="nav-item dropdown">
                                 <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+                                <div class="dropdown-menu dropdown-menu-sw" aria-labelledby="navbarDropdown" role="menu">
+                                    <a class="dropdown-item" href="newcompany">Create Company</a>
+                                    <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
