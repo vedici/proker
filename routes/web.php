@@ -26,3 +26,5 @@ Route::get('/newcompany', 'PageController@newcompany')->name('page.newcompany');
 Route::get('/product', 'PageController@manageproduct')->name('page.product');
 
 Route::get('/message', 'PageController@message')->name('page.message');
+
+Route::resource('/company', 'CompanyController');
