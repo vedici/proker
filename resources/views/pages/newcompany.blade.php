@@ -83,7 +83,7 @@
 
                         <div class="form-group row justify-content-center">
                           <div class="col-md-6 offset-md-2">
-                            <span class="small">conit.me/company/<span class="font-weight-bold">Vedici</span></span>
+                            <span class="small" id="companyurl">conit.me/company/<span class="font-weight-bold">Vedici</span></span>
                           </div>
                         </div>
 
@@ -112,4 +112,11 @@
         </div>
     </div>
 </div>
+<script>    
+    $(function() {
+        $("#urlcompany").click(function() {
+            alert('Clicked');
+        })
+    });
+</script>
 @endsection
