@@ -3,46 +3,47 @@
 @section('content')
     <div class="container-fluid">
         <div class="row shadow-sm" style="background-color:#eceff1; height: 100px;">
-            <div class="container">
-                <div class="row text-center" style="margin-top:25px;">
-                    <div class="col-md-1">
+            <div class="col-md-1">
+
+            </div>
+            <div class="col-md-10 justify-content-center text-center" style="margin-top:25px;">
+              <h1><a href="#" style="text-decoration:none;" data-toggle="modal" data-target="#categoryModal">CATEGORY</a></h1>
+              <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="categoryModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">Change Seller Category</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><span class="font-weight-bold">Seller Category</span></li>
+                        <li class="list-group-item"><a href="#">Music</a></li>
+                        <li class="list-group-item"><a href="#">Craft</a></li>
+                        <li class="list-group-item"><a href="#">Software</a></li>
+                        <li class="list-group-item"><a href="#">Cookery</a></li>
+                        <li class="list-group-item"><a href="#">Drawing</a></li>
+                        <li class="list-group-item"><a href="#">Sculpture</a></li>
+                        <li class="list-group-item"><a href="#">Video Game</a></li>
+                        <li class="list-group-item"><a href="#">Architecture</a></li>
+                      </ul>
+                    </div>
+                    <div class="modal-footer">
 
                     </div>
-                    <div class="col-md-10">
-                      <h1><a href="#" style="text-decoration:none;" data-toggle="modal" data-target="#categoryModal">CATEGORY</a></h1>
-                      <div class="modal fade" id="categoryModal" tabindex="-1" role="dialog" aria-labelledby="categoryModalLabel" aria-hidden="true">
-                        <div class="modal-dialog" role="document">
-                          <div class="modal-content">
-                            <div class="modal-header">
-                              <h5 class="modal-title" id="exampleModalLabel">Change Seller Category</h5>
-                              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                              </button>
-                            </div>
-                            <div class="modal-body">
-                              <ul class="list-group list-group-flush">
-                                <li class="list-group-item"><span class="font-weight-bold">Seller Category</span></li>
-                                <li class="list-group-item"><a href="#">Music</a></li>
-                                <li class="list-group-item"><a href="#">Craft</a></li>
-                                <li class="list-group-item"><a href="#">Software</a></li>
-                                <li class="list-group-item"><a href="#">Cookery</a></li>
-                                <li class="list-group-item"><a href="#">Drawing</a></li>
-                                <li class="list-group-item"><a href="#">Sculpture</a></li>
-                                <li class="list-group-item"><a href="#">Video Game</a></li>
-                                <li class="list-group-item"><a href="#">Architecture</a></li>
-                              </ul>
-                            </div>
-                            <div class="modal-footer">
-
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-1">
-
-                    </div>
+                  </div>
                 </div>
+              </div>
+            </div>
+            <div class="col-md-1">
+
+            </div>
+        </div>
+
+            <div class="container">
+
                 <div class="row" style="margin-top: 50px;">
                   <div class="col-md-3">
                     <div class="card rounded-0">
@@ -130,11 +131,10 @@
                           </ul>
                         </div>
                       </div>
-                    </div>
+                    <!--</div>-->
                 </div>
             </div>
 
         </div>
     </div>
-</div>
 @endsection
