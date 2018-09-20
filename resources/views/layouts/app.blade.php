@@ -111,12 +111,32 @@
         color:black;
     }
 
-    @media (max-width:767px){
+    .button-footer{
+        width:200px;
+        background-color: #012245 !important;
+        border-color: white;
+        color: white;
+    }
+
+    .button-footer:hover{
+        background-color: #C7D1DB !important;
+        color: #012245;
+    }
+
+    @media (max-width:768px){
         #footer h5 {
             padding-left: 0;
             border-left: transparent;
             padding-bottom: 0px;
             margin-bottom: 10px;
+        }
+
+        .button-footer{
+            width:150px;
+            background-color: #012245 !important;
+            border-color: white;
+            color: white;
+            font-size: 10;
         }
     }
     </style>
@@ -217,34 +237,39 @@
 	<section id="footer">
 		<div class="container">
 			<div class="row text-center text-xs-center text-sm-left text-md-left">
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
+                <div class="col-xs-12 col-sm-3 col-md-3">
 					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						<li><button class="btn button-footer">Panduan ConIT</button></li>
+						<li><button class="btn button-footer">Panduan Keamanan</button></li>
+						<li><button class="btn button-footer">Hubungi Tim ConIt</button></li>
+						<li><button class="btn button-footer">Pricing Model</button></li>
 					</ul>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>ConIt</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tentang Kami</a></li>
 						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Aturan Penggunaan</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Vulnerability Report</a></li>
 					</ul>
 				</div>
-				<div class="col-xs-12 col-sm-4 col-md-4">
-					<h5>Quick links</h5>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Pembeli</h5>
 					<ul class="list-unstyled quick-links">
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
-						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
-						<li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Cara Menggunakan ConIt</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Messaging</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tips Mencari Seller</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Kontrol Pesanan</a></li>
+					</ul>
+				</div>
+				<div class="col-xs-12 col-sm-3 col-md-3">
+					<h5>Penjual</h5>
+					<ul class="list-unstyled quick-links">
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Cara Berjualan</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Messaging</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Tips Mencari Pembeli</a></li>
+						<li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Kontrol Pesanan</a></li>
 					</ul>
 				</div>
 			</div>
