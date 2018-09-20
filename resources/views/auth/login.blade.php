@@ -65,16 +65,6 @@
                     </form>
                 </div>
             </div>
-            <div class="row" style="margin-top:25px;">
-              <div class="col-md-3"></div>
-              <div class="col-md-6">
-                <form class="form-inline justify-content-center">
-                  <input class="form-control" type="search" placeholder="Search Seller's Name" aria-label="Search">
-                  <button class="btn btn-outline-info" type="submit">Search</button>
-                </form>
-              </div>
-              <div class="col-md-4"></div>
-            </div>
         </div>
     </div>
 </div>

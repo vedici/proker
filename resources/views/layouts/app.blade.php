@@ -115,6 +115,9 @@
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+                <form class="form-inline" id="search_seller_input">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search Seller's Name" aria-label="Search">
+                </form>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
@@ -247,6 +250,15 @@
 			</div>
 		</div>
 	</section>
-	<!-- ./Footer -->
+    <!-- ./Footer -->
+    <script>
+        $(function() {
+            $("#search_seller_input").submit(function(event) {
+                alert('Enter');
+                event.preventDefault();
+            });
+        });
+    </script>
+    @yield('script')
 </body>
 </html>
