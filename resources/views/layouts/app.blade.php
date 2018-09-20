@@ -107,7 +107,7 @@
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #C7D1DB;
+        background-color: #ECEFF1;
         color:black;
     }
 
@@ -118,6 +118,10 @@
             padding-bottom: 0px;
             margin-bottom: 10px;
         }
+    }
+    
+    body {
+        background-color: #ECEFF1
     }
     </style>
 
