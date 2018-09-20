@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Company;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class CompanyController extends Controller
 {
@@ -17,9 +18,11 @@ class CompanyController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(Request $request)
     {
-        return "Success";
+        $user = Auth::user();
+        $companies = Company::all()->where('user_id', $request->user()->id);
+        return view('company.index', ['companies' => $companies]);
     }
 
     /**
