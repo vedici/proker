@@ -14,7 +14,7 @@ class CompanyPostRelationship extends Migration
     public function up()
     {
         Schema::table('posts', function(Blueprint $table) {
-            $table->foreign('id_company')->references('id')->on('companies');
+            $table->foreign('company_id')->references('id')->on('companies');
         });
     }
 
