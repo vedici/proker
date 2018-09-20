@@ -93,6 +93,12 @@
         font-weight: 700;
     }
 
+    #searchbar{
+        background-color:#063B73;
+        border-color:#012245;
+        color:white;
+    }
+
     #searchbar::placeholder{
         color:#5685B5;
     }
@@ -101,6 +107,8 @@
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none;
+        background-color: #C7D1DB;
+        color:black;
     }
 
     @media (max-width:767px){
@@ -126,7 +134,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <form class="form-inline" id="search_seller_input">
-                    <input class="form-control mr-sm-2 form-control-sm" id="searchbar" type="search" placeholder="Search Seller's Name" aria-label="Search" style="background-color:#063B73;border-color:#012245;color:white;">
+                    <input class="form-control mr-sm-2 form-control-sm" id="searchbar" type="search" placeholder="Search Seller's Name" aria-label="Search" style="">
                 </form>
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
