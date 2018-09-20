@@ -107,7 +107,7 @@
         outline: none;
         -webkit-box-shadow: none;
         box-shadow: none;
-        background-color: #C7D1DB;
+        background-color: #ECEFF1;
         color:black;
     }
 
@@ -138,6 +138,10 @@
             color: white;
             font-size: 10;
         }
+    }
+    
+    body {
+        background-color: #ECEFF1
     }
     </style>
 
