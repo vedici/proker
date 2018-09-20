@@ -107,7 +107,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark navbar-laravel">
+        <nav class="navbar navbar-expand-md navbar-dark navbar-laravel" style="background-color: #012245">
             <div class="container">
                 <a class="navbar-brand" href="{{ url('/') }}">
                     {{ config('app.name', 'Conit') }}
