@@ -154,6 +154,7 @@
                                 </a>
 
                                 <div class="dropdown-menu dropdown-menu-sw" aria-labelledby="navbarDropdown" role="menu">
+                                        <a class="dropdown-item" href="newcompany">Usaha Anda</a>
                                     <a class="dropdown-item" href="newcompany">Create Company</a>
                                     <div class="dropdown-divider"></div>
                                     <a class="dropdown-item" href="{{ route('logout') }}"
