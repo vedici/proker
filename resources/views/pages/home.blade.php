@@ -24,8 +24,11 @@
                         <div class="card-header text-center">
                           <h4>Statistics</h4>
                         </div>
-                        <div class="card-body">
-
+                        <div class="card-body text-center">
+                            <span>Your Work</span>
+                            <div class="row">
+                                <canvas id="pieChart"></canvas>
+                            </div>
                         </div>
                       </div>
                     </div>
@@ -104,4 +107,23 @@
             </div>
     </div>
 </div>
+<script>
+var ctxP = document.getElementById("pieChart").getContext('2d');
+var myPieChart = new Chart(ctxP, {
+    type: 'pie',
+    data: {
+        labels: ["Cancelled", "OnProgress", "Waiting", "Finished", "Delivered"],
+        datasets: [
+            {
+                data: [2, 50, 100, 15, 45],
+                backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
+                hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+            }
+        ]
+    },
+    options: {
+        responsive: true
+    }
+});
+</script>
 @endsection
