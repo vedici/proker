@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<script>$("textarea").resizable();</script>
+<script>//$("textarea").resizable();</script>
     <div class="container-fluid">
         <div class="row shadow-sm" style="background-color:#eceff1; height: 120px;">
             <div class="col-md-2 offset-md-2 d-none d-md-block" style="padding-top: 10px; padding-bottom: 10px;">
@@ -24,10 +24,35 @@
                         <div class="card-header text-center">
                           <h4>Statistics</h4>
                         </div>
-                        <div class="card-body text-center">
-                            <span>Your Work</span>
-                            <div class="row">
-                                <canvas id="pieChart"></canvas>
+                        <ul class="nav nav-tabs md-tabs nav-justified">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#panel1" role="tab">Project</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel2" role="tab">Popularity</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" data-toggle="tab" href="#panel3" role="tab">Contact</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content card-body text-center">
+                            <div class="tab-pane fade in show active" id="panel1" role="tabpanel">
+                                <span>Your Work</span>
+                                <div class="row">
+                                    <canvas id="pieChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="panel2" role="tabpanel">
+                                <span>Your Popularity</span>
+                                <div class="row">
+                                    <canvas id="lineChart"></canvas>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="panel1" role="tabpanel">
+                                <span>Your Work</span>
+                                <div class="row">
+                                    <canvas id="pieChart"></canvas>
+                                </div>
                             </div>
                         </div>
                       </div>
@@ -118,6 +143,38 @@ var myPieChart = new Chart(ctxP, {
                 data: [2, 50, 100, 15, 45],
                 backgroundColor: ["#F7464A", "#46BFBD", "#FDB45C", "#949FB1", "#4D5360"],
                 hoverBackgroundColor: ["#FF5A5E", "#5AD3D1", "#FFC870", "#A8B3C5", "#616774"]
+            }
+        ]
+    },
+    options: {
+        responsive: true
+    }
+});
+var ctxL = document.getElementById("lineChart").getContext('2d');
+var myLineChart = new Chart(ctxL, {
+    type: 'line',
+    data: {
+        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        datasets: [
+            {
+                label: "Visitors",
+                borderColor: "rgba(37, 73, 130, 0.8)",
+                backgroundColor: "rgba(69, 106, 165, 0.4)",
+                pointBackgroundColor: "rgb(9, 31, 66)",
+                pointBorderColor: "#2a4268",
+                pointHoverBackgroundColor: "#28559b",
+                pointHoverBorderColor: "#4e6384",
+                data: [65, 59, 80, 81, 56, 55, 40]
+            },
+            {
+                label: "Messages",
+                borderColor: "rgba(61, 142, 88, 0.8)",
+                backgroundColor: "rgba(23, 130, 58, 0.4)",
+                pointBackgroundColor: "rgb(13, 173, 66)",
+                pointBorderColor: "#077c2e",
+                pointHoverBackgroundColor: "#107f35",
+                pointHoverBorderColor: "#086828",
+                data: [28, 48, 40, 19, 86, 27, 90]
             }
         ]
     },
