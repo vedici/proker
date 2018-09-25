@@ -17,7 +17,7 @@ class CheckIfNotGuest
     public function handle($request, Closure $next)
     {
         if (!Auth::guest()) {
-            return redirect(route('page.feed'));
+            return redirect(route('feed.index'));
         }
         return $next($request);
     }
