@@ -34,8 +34,14 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.min.js"></script>
     {{-- MDBootstrap tooltip --}}
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.10/js/mdb.min.js"></script>
-
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+    }
+    ul li a{
+        font-size: 15px;
+    }
     section {
         padding: 60px 0;
     }
