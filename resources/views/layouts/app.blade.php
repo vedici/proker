@@ -188,7 +188,7 @@
                             </li>
                         @else
                         <li class="nav-item {{{ (Request::is('feed') ? 'active' : '') }}}">
-                          <a class="nav-link" href="{{ route('page.feed') }}">Feed <span class="sr-only">(current)</span></a>
+                          <a class="nav-link" href="{{ route('feed.index') }}">Feed <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item {{{ (Request::is('message') ? 'active' : '') }}}">
                           <a class="nav-link" href="{{ route('page.message') }}">Message</a>

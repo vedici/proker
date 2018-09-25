@@ -65,7 +65,25 @@
                     <!-- Card Posting -->
                     <div class="col-md-6">
                       <!-- List Posting -->
+                      @foreach ($posts as $post)
                       <div class="card rounded-0" style="margin-bottom:15px;">
+                        <div class="card-body">
+                          <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
+                            <div class="col-md-2">
+                              <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
+                            </div>
+                            <div class="col-md-10">
+                              <span class=""><a href="detail" style="text-decoration:none;">Denning & Fourcade</a></span>
+                            </div>
+                          </div>
+                          <div class="row" style="margin-top:10px; padding:5px;">
+                              {{ $post->message }}
+                          </div>
+                        </div>
+                      </div>
+                      @endforeach
+
+                      <!--<div class="card rounded-0" style="margin-bottom:15px;">
                         <div class="card-body">
                           <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
                             <div class="col-md-2">
@@ -95,23 +113,7 @@
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
                           </div>
                         </div>
-                      </div>
-
-                      <div class="card rounded-0" style="margin-bottom:15px;">
-                        <div class="card-body">
-                          <div class="row" style="border-bottom:solid 1px #d4d7db; padding:5px;">
-                            <div class="col-md-2">
-                              <img src="{{ URL::asset('/img/sample.jpg') }}" class="img-responsive" style="width:50px;height:50px;"/>
-                            </div>
-                            <div class="col-md-10">
-                              <span class=""><a href="detail" style="text-decoration:none;">Denning & Fourcade</a></span>
-                            </div>
-                          </div>
-                          <div class="row" style="margin-top:10px; padding:5px;">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                          </div>
-                        </div>
-                      </div>
+                    </div>-->
                       <!---->
                     </div>
                     <!---->

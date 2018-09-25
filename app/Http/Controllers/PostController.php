@@ -4,9 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class PostController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['show']);
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -14,7 +20,9 @@ class PostController extends Controller
      */
     public function index()
     {
-        //
+        $user = Auth::user();
+        $posts = Post::all();
+        return view('pages.feed2', ['posts' => $posts]);
     }
 
     /**
